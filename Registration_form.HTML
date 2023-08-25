@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: lightblue;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .li1{
+            padding-left: 20px;
+        }
+        .li2{
+            padding-left: 20px;
+        }
+        .li3{
+            padding-left: 20px;
+        }
+        .li4{
+            padding-left: 20px;
+        }
+        .li5{
+            padding-left: 20px;
+        }
+        .li6{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <p>Enter your details below</p>
+    <form method="post" target="_blank">
+        <div>
+            <ul class="uli">
+                <li class="li1">
+                    <input type="email" required value="youremail@gmail.com" name="email" placeholder="Email"
+                        autofocus />
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li class="li2">
+                    <input type="password" required placeholder="Password" name="password" minlength="8"
+                        maxlength="20" />
+                </li>
+            </ul>
+        </div>
+        <i>
+            <p>!Typea complex password with 8-20 characters.</p>
+        </i>
+        <div>
+            <ul>
+                <li class="li3">
+                    <input type="number" required placeholder="+20 Phone Number" name="Phone Number">
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <i>
+            <p>Enter your profession:</p>
+        </i>
+        <div>
+            <ul>
+                <li class="li4">
+                    <input type="radio" name="profession" id="Student" value="Student" />
+                    <label for="student">Student</label>
+                    <input type="radio" name="profession" id="Teacher" value="Teacher" />
+                    <label for="Teacher">Teacher</label>
+                    <input type="radio" name="profession" id="Developer" value="Developer" />
+                    <label for="Developer">Developer</label>
+                </li>
+            </ul>
+        </div>
+        <label for="Stage">Choose the stage if you are (Student)</label>
+        <select name="stage" id="stage">
+            <optgroup label="Primary Stage">
+                <option value="first primary">first primary</option>
+                <option value="Second primary">Second primary</option>
+                <option value="Third primary">Third primary</option>
+                <option value="Forth primary">Forth primary</option>
+                <option value="Fifth primarry">Fifth primarry</option>
+            </optgroup>
+            <optgroup label="Preparatory stage">
+                <option value="first preparatory">first preparatory</option>
+                <option value="Second preparatory">Second preparatory</option>
+                <option value="Third preparatory">Third preparatory</option>
+            </optgroup>
+            <optgroup label="Secondary stage">
+                <option value="first secondary">first secondary</option>
+                <option value="second secondary">second secondary</option>
+                <option value="third secondary">third secondary</option>
+            </optgroup>
+        </select>
+        <hr>
+        <ul>
+            <li class="li5">
+                <label for="dob"> Enter your Date of Birth: </label>
+                <input type="date" name="date" id="dob">
+            </li>
+        </ul>
+        <hr>
+        <div>
+            <ul>
+                <li class="li6">
+                    <input type="text" placeholder="Any notes" Name="Notes" />
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <input type="submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
